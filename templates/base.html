@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block head_title %}MuyPicky.com{% endblock head_title %}</title>
+    {% include 'snippets/css.html' %}
+
+    
+</head>
+<body>
+    <div class='container'>
+            <h1>MuckyPie.com</h1>    
+            {% include 'snippets/nav.html' %}       
+            {% block content %}
+            Hello there!        
+             {% endblock content %}
+</div>
+
+{% include 'snippets/js.html' %}
+    
+</body>
+</html>
